@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <form class="contact-form" id="contact-form">
+    <h2>Contact Us</h2>
+
+    <div class="flex-input">
+      <div class="contenedor-input">
+        <label for="first-name">First Name *</label>
+        <input type="text" id="first-name" name="first-name">
+      </div>
+
+      <div class="contenedor-input">
+        <label for="last-name">Last Name *</label>
+        <input type="text" id="last-name" name="last-name">
+      </div>
+
+      <div class="contenedor-input">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email">
+      </div>
+    </div>
+
+    <label>Query Type *</label>
+    <div class="flex-radio">
+      <div class="contenedor-radio" id="contenedor-radio">
+        <input type="radio" id="general-enquiry" name="query-type" value="general-enquiry">
+        <label for="general-enquiry">General Enquiry</label>
+      </div>
+
+      <div class="contenedor-radio">
+        <input type="radio" id="support-request" name="query-type" value="support-request">
+        <label for="support-request">Support Request</label>
+      </div>
+      <div id="radioError" class="error-container"></div>
+    </div>
+    </div>
+    <div class="contenedor-input">
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+    </div>
+
+    <div class="consent">
+      <input type="checkbox" id="consent" name="consent">
+      <label for="consent">I consent to being contacted by the team *</label>      
+    </div>
+    <div id="checkboxError" class="error-container"></div>
+
+    <button type="submit" id="button-submit" >Submit</button>
+  </form>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

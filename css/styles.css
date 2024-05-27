@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  margin: 0 auto;
+  width: 100%;
+  color: hsl(187, 24%, 22%);
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 60%;
+  }
+}
+
+p {
+  margin-top: 5px;
+}
+
+.contact-form {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.flex-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contenedor-input {
+  flex: 1 1 calc(50% - 10px);
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+.flex-radio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contenedor-radio {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  margin: 10px 0;
+  flex: 1 1 calc(50% - 10px);
+  min-width: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.contact-form label {
+  margin: 10px 5px;
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form input[type="radio"] {
+  width: auto;
+  margin: 10px;
+}
+.contact-form .consent {
+  display: flex;
+}
+.contact-form .consent input {
+  width: auto;
+  margin: 10px;
+}
+
+.contact-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #218838;
+}
+
+.contact-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.text-red {
+  color: red;
+}
+
+.error-container {
+  margin-top: 10px;
+}
